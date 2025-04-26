@@ -1,10 +1,54 @@
-<html>
-    <head>
-        <style>
-        </style>
-    </head>
-    <body>
-        <h1>Under Construction</h1>
-    </body>
-    
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="alert">Weather Station</div>
+        <div class="location">San Diego, CA</div>
+    </header>
+
+    <main>
+        <section class="left-panel">
+            <div class="graph">
+                <iframe
+                        id="graph-iframe"
+                        src="https://d9qj1hm6ouyqd.cloudfront.net/api/graph"
+                        frameborder="0"
+                ></iframe>
+            </div>
+        </section>
+
+        <aside class="right-panel">
+            <div class="history">
+                <h3>Datapoint Table History</h3>
+                <div class="history-scroll">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th colspan="3">Live weather</th>
+                            <th colspan="3">Forecasted weather</th>
+                        </tr>
+                        <tr>
+                            <th>Time</th><th>Temp (°F)</th><th>Humidity (%)</th>
+                            <th>Time</th><th>Temp (°F)</th><th>Humidity (%)</th>
+                        </tr>
+                        </thead>
+                        <tbody id="history-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </aside>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
