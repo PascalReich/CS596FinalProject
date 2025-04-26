@@ -1,0 +1,115 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e2a38;
+    color: #e0e0e0;
+}
+
+.container {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.alert, .location {
+    background-color: #2a384a;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000050;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.left-panel {
+    flex: 3;
+}
+
+.right-panel {
+    flex: 1;
+}
+
+.graph {
+    background-color: #1a222e;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.graph > iframe,
+.graph > #plot {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* hide the old stat panels */
+.weather-sections,
+.section,
+.label,
+.stat {
+    display: none;
+}
+
+.history {
+    background-color: #1a222e;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.history h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.history-scroll {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 430px;
+}
+
+.history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history th,
+.history td {
+    border-bottom: 1px solid rgba(224,224,224,0.2);
+    border-right:  1px solid rgba(224,224,224,0.2);
+    padding: 8px;
+}
+
+.history th:last-child,
+.history td:last-child {
+    border-right: none;
+}
+
+.history thead tr:first-child th:first-child {
+    border-right: 3px solid rgba(224,224,224,0.6);
+}
+
+.history thead tr:nth-child(2) th:nth-child(3),
+.history tbody tr td:nth-child(3) {
+    border-right: 3px solid rgba(224,224,224,0.6);
+}
+
+@media (max-width: 600px) {
+    .history-scroll { max-height: 300px; }
+}
