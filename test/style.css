@@ -101,12 +101,12 @@ main {
     border-right: none;
 }
 
-.history thead tr:first-child th:first-child {
-    border-right: 3px solid rgba(224,224,224,0.6);
+.borderright {
+    border-right: 3px solid rgba(224,224,224,0.6) !important;
 }
 
-.history thead tr:nth-child(2) th:nth-child(3),
-.history tbody tr td:nth-child(3) {
+.history thead tr:nth-child(2) th:nth-child(6),
+.history tbody tr td:nth-child(6) {
     border-right: 3px solid rgba(224,224,224,0.6);
 }
 
