@@ -14,13 +14,16 @@ async function fetchWeather() {
     try {
         const res = await fetch(API_DATA);
         if (!res.ok) throw new Error(res.statusText);
-        const { measured: m, forecasted: f } = await res.json();
+        const { measured: m, insideMeasured: i, forecasted: f } = await res.json();
 
         historyBody.insertAdjacentHTML('afterbegin', `
       <tr>
         <td>${formatTS(m.time)}</td>
         <td>${m.temperature.toFixed(1)}°</td>
         <td>${m.humidity.toFixed(1)}%</td>
+        <td>${formatTS(i.time)}</td>
+        <td>${i.temperature.toFixed(1)}°</td>
+        <td>${i.humidity.toFixed(1)}%</td>
         <td>${formatTS(f.time)}</td>
         <td>${f.temperature.toFixed(1)}°</td>
         <td>${f.humidity.toFixed(1)}%</td>
