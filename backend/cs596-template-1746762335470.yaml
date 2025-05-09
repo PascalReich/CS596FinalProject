@@ -1,0 +1,1669 @@
+---
+Metadata:
+  AWSToolsMetrics:
+    IaC_Generator: "arn:aws:cloudformation:us-west-2:198840074363:generatedTemplate/6834d7d9-9b91-40b0-bb44-faf9588da26d"
+Parameters:
+  LambdaFunctionLatestReadoutCodeS3BucketsIRnF:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunctionGatherForecastCodeZipFileOfGLk:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionLatestReadoutCodeS3ObjectVersionaPmkf:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunctionLatestReadoutCodeS3KeygLaJn:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionReportTemperatureAndHumidityCodeS3Keyb7lzT:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionGenerateGraphCodeImageUriCQApK:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionGenerateGraphCodeZipFilemwk9L:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionReportTemperatureAndHumidityCodeS3ObjectVersionQIVqz:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunctionGenerateGraphCodeS3Key4IGsR:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionLatestReadoutCodeImageUri78MxI:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionGatherForecastCodeS3BucketsLToJ:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunctionGatherForecastCodeS3ObjectVersionNzKwG:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunctionGatherForecastCodeS3Key00hs5:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionLatestReadoutCodeZipFile8WyGh:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionReportTemperatureAndHumidityCodeImageUriY32pT:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionGatherForecastCodeImageUriVp9Q8:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionReportTemperatureAndHumidityCodeS3Bucketgsq8J:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunctionGenerateGraphCodeS3BucketYV4KX:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunctionReportTemperatureAndHumidityCodeZipFilezNb1X:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionGenerateGraphCodeS3ObjectVersionsXFQf:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+Resources:
+  LogsLogStream20250413LATEST887bcc28339e41e8a95c8019491fdea0:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/13/[$LATEST]887bcc28339e41e8a95c8019491fdea0"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LambdaUrlFunctionReportTemperatureAndHumidity:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Url"
+    DeletionPolicy: "Retain"
+    Properties:
+      Qualifier: ""
+      InvokeMode: "BUFFERED"
+      AuthType: "AWS_IAM"
+      TargetFunctionArn: "ReportTemperatureAndHumidity"
+      Cors:
+        AllowCredentials: false
+        AllowOrigins:
+        - "*"
+        ExposeHeaders: []
+        AllowMethods: []
+        AllowHeaders: []
+  LogsLogStream20250325LATEST0c177cf7044e43d6a220bc354f5ff22d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/25/[$LATEST]0c177cf7044e43d6a220bc354f5ff22d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250422LATEST9706ae240f6c428b99dcf4e0dc60089d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/22/[$LATEST]9706ae240f6c428b99dcf4e0dc60089d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250418LATESTa2fb124a83104e8c8663430ce6e990a8:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]a2fb124a83104e8c8663430ce6e990a8"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  ResourceGroupsGroupAWSAppRegistryAppTag198840074363CS596FinalProject:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ResourceGroups::Group"
+    DeletionPolicy: "Retain"
+    Properties:
+      Configuration:
+      - Type: "AWS::AppRegistry::ApplicationResourceGroup"
+        Parameters:
+        - Values:
+          - "arn:aws:servicecatalog:us-west-2:198840074363:/applications/0dgrw0b7br9kgrhnogfo6ma1ai"
+          Name: "application-arn"
+        - Values:
+          - "CS596FinalProject"
+          Name: "application-name"
+        - Values:
+          - "awsApplication"
+          Name: "application-tag-key"
+        - Values:
+          - "arn:aws:resource-groups:us-west-2:198840074363:group/CS596FinalProject/0dgrw0b7br9kgrhnogfo6ma1ai"
+          Name: "application-tag-values"
+      Tags:
+      - Value: "true"
+        Key: "EnableAWSServiceCatalogAppRegistry"
+      Name: "AWS_AppRegistry_AppTag_198840074363-CS596FinalProject"
+  LogsLogStream20250418LATEST2abf1e40a7b649db83b595e2f1830815:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]2abf1e40a7b649db83b595e2f1830815"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250415LATESTb4dfd79a40f14f2da316b257dc41255e:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/15/[$LATEST]b4dfd79a40f14f2da316b257dc41255e"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250419LATEST5217aa18a9744d03b9edc9d02e8b1915:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/19/[$LATEST]5217aa18a9744d03b9edc9d02e8b1915"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250418LATEST04e9681b700644a5a66052b58b99ec5c:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]04e9681b700644a5a66052b58b99ec5c"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250412LATEST374faa7e7fd444b196dd6df9f90827ea:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/12/[$LATEST]374faa7e7fd444b196dd6df9f90827ea"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogGroupAPIGatewayExecutionLogs9hkxj32oviLive:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      FieldIndexPolicies: []
+      LogGroupClass: "STANDARD"
+      RetentionInDays: 5
+      LogGroupName: "API-Gateway-Execution-Logs_9hkxj32ovi/Live"
+      DataProtectionPolicy: {}
+  LambdaPermissionFunctionReportTemperatureAndHumidityYE:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionReportTemperatureAndHumidity"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-west-2:198840074363:xl4davix3h/*/*/data"
+      Principal: "apigateway.amazonaws.com"
+  LogsLogStream20250418LATEST8d32a212d40846cc89bef5939494a63d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]8d32a212d40846cc89bef5939494a63d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250421LATESTea6f50fbd6154936b276d63c7e3e5ec1:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/21/[$LATEST]ea6f50fbd6154936b276d63c7e3e5ec1"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250330LATEST55787f41681941f5aa18bdeea49b2249:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/30/[$LATEST]55787f41681941f5aa18bdeea49b2249"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LambdaPermissionFunctionGenerateGraph:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionGenerateGraph"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-west-2:198840074363:9hkxj32ovi/*/GET/graph"
+      Principal: "apigateway.amazonaws.com"
+  LogsLogStream20250418LATEST7ab37f99335d485ca36fdf0badb6adb4:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]7ab37f99335d485ca36fdf0badb6adb4"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250405LATESTe08769de78e84c35bb7f2f8705a6a21a:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/05/[$LATEST]e08769de78e84c35bb7f2f8705a6a21a"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250430LATEST6bb0d330d5aa41f88600f072a990908d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/30/[$LATEST]6bb0d330d5aa41f88600f072a990908d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250325LATESTf7ee1b975d38458ca864094b49ae9e09:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/25/[$LATEST]f7ee1b975d38458ca864094b49ae9e09"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250419LATEST4c04e0946ca3493ab3e1795a7bf447fe:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/19/[$LATEST]4c04e0946ca3493ab3e1795a7bf447fe"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250419LATEST2cf1466e420442c3aa95ca2066984dab:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/19/[$LATEST]2cf1466e420442c3aa95ca2066984dab"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250328LATEST737515b7e353491caecc46766d9b7704:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/28/[$LATEST]737515b7e353491caecc46766d9b7704"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250418LATESTd1923b03a8a94511aca257d5f1bc4700:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]d1923b03a8a94511aca257d5f1bc4700"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  ResourceGroupsGroupCS596FinalProject0dgrw0b7br9kgrhnogfo6ma1ai:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ResourceGroups::Group"
+    DeletionPolicy: "Retain"
+    Properties:
+      Configuration:
+      - Type: "AWS::ResourceGroups::ApplicationGroup"
+        Parameters: []
+      Tags:
+      - Value: "true"
+        Key: "EnableAWSServiceCatalogAppRegistry"
+      Name: "CS596FinalProject/0dgrw0b7br9kgrhnogfo6ma1ai"
+  IAMRoleReportTemperatureAndHumidity:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/service-role/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::198840074363:policy/service-role/AWSLambdaMicroserviceExecutionRole-9724ad01-46c7-45fd-af1b-52c66932c278"
+      - "arn:aws:iam::198840074363:policy/service-role/AWSLambdaBasicExecutionRole-f2564374-dc0c-4a29-be47-2daa4e446ddd"
+      MaxSessionDuration: 3600
+      RoleName: "ReportTemperatureAndHumidity"
+      Policies:
+      - PolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+          - Resource: "*"
+            Action:
+            - "ses:SendEmail"
+            - "ses:SendTemplatedEmail"
+            - "ses:SendRawEmail"
+            Effect: "Allow"
+            Sid: "VisualEditor0"
+        PolicyName: "sendEmails"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  DynamoDBTableWeatherData:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::DynamoDB::Table"
+    DeletionPolicy: "Retain"
+    Properties:
+      SSESpecification:
+        SSEEnabled: false
+      TableName: "WeatherData"
+      AttributeDefinitions:
+      - AttributeType: "S"
+        AttributeName: "Datetime"
+      - AttributeType: "S"
+        AttributeName: "Type"
+      ContributorInsightsSpecification:
+        Enabled: false
+      BillingMode: "PAY_PER_REQUEST"
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      WarmThroughput:
+        ReadUnitsPerSecond: 12000
+        WriteUnitsPerSecond: 4000
+      KeySchema:
+      - KeyType: "HASH"
+        AttributeName: "Datetime"
+      - KeyType: "RANGE"
+        AttributeName: "Type"
+      DeletionProtectionEnabled: true
+      TableClass: "STANDARD"
+      Tags:
+      - Value: "arn:aws:resource-groups:us-west-2:198840074363:group/CS596FinalProject/0dgrw0b7br9kgrhnogfo6ma1ai"
+        Key: "awsApplication"
+      - Value: "CS596FinalProject"
+        Key: "AppAssoc"
+      TimeToLiveSpecification:
+        Enabled: false
+  LogsLogStream20250418LATEST60b3628fd7f042118155b988f6b3b170:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]60b3628fd7f042118155b988f6b3b170"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250419LATESTcdef529a81fb4a9fb24b50cd433f20c9:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/19/[$LATEST]cdef529a81fb4a9fb24b50cd433f20c9"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250418LATEST12bb23947e254f169e3ba7fdade93ce9:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]12bb23947e254f169e3ba7fdade93ce9"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  SchedulerScheduleRefreshForecast:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Scheduler::Schedule"
+    DeletionPolicy: "Retain"
+    Properties:
+      GroupName: "default"
+      StartDate: "2025-03-26T07:05:00.000Z"
+      ScheduleExpression: "rate(1 days)"
+      Target:
+        Arn:
+          Fn::GetAtt:
+          - "LambdaFunctionGatherForecast"
+          - "Arn"
+        RetryPolicy:
+          MaximumEventAgeInSeconds: 86400
+          MaximumRetryAttempts: 0
+        RoleArn: "arn:aws:iam::198840074363:role/service-role/Amazon_EventBridge_Scheduler_LAMBDA_fe71f82e03"
+      Description: ""
+      State: "ENABLED"
+      FlexibleTimeWindow:
+        Mode: "FLEXIBLE"
+        MaximumWindowInMinutes: 30
+      ScheduleExpressionTimezone: "America/Los_Angeles"
+      Name: "RefreshForecast"
+  LambdaPermissionFunctionLatestReadout:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionLatestReadout"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-west-2:198840074363:9hkxj32ovi/*/GET/data"
+      Principal: "apigateway.amazonaws.com"
+  IAMRoleReportTemperatureAndHumidityrole0dmwqx00:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/service-role/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::198840074363:policy/service-role/AWSLambdaBasicExecutionRole-2c922a03-7473-4247-a38a-295e7cebd87b"
+      MaxSessionDuration: 3600
+      RoleName: "ReportTemperatureAndHumidity-role-0dmwqx00"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  LogsLogStream20250420LATESTe77f95d4e6664510ade95b3bf42d301d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/20/[$LATEST]e77f95d4e6664510ade95b3bf42d301d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250423LATEST069e9df445b34d2a99e332a4a91b836c:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/23/[$LATEST]069e9df445b34d2a99e332a4a91b836c"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogGroupawslambdaGatherForecast:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      FieldIndexPolicies: []
+      LogGroupClass: "STANDARD"
+      RetentionInDays: 3
+      LogGroupName: "/aws/lambda/GatherForecast"
+      Tags:
+      - Value: "arn:aws:resource-groups:us-west-2:198840074363:group/CS596FinalProject/0dgrw0b7br9kgrhnogfo6ma1ai"
+        Key: "awsApplication"
+      - Value: "CS596FinalProject"
+        Key: "AppAssoc"
+      DataProtectionPolicy: {}
+  LogsLogStream20250502LATESTbb2944b88d354ff093223b457e72deb1:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/05/02/[$LATEST]bb2944b88d354ff093223b457e72deb1"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250422LATEST116d94287ba5463186e96a555fe8577c:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/22/[$LATEST]116d94287ba5463186e96a555fe8577c"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250420LATEST34d5d987fc7949c3a9a796b3ea8ec878:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/20/[$LATEST]34d5d987fc7949c3a9a796b3ea8ec878"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250429LATEST8ebab2e4a9eb45c399b721de11741481:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/29/[$LATEST]8ebab2e4a9eb45c399b721de11741481"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250325LATESTbf776e5ac8c84966b05bf830b7418412:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/25/[$LATEST]bf776e5ac8c84966b05bf830b7418412"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250422LATEST5cb9980c9e7248a387ea999e69f7a909:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/22/[$LATEST]5cb9980c9e7248a387ea999e69f7a909"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250403LATEST18a65d454912407cbfd0630d09276a54:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/03/[$LATEST]18a65d454912407cbfd0630d09276a54"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250420LATEST8387c1a0e7484a018df314647007e63d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/20/[$LATEST]8387c1a0e7484a018df314647007e63d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250419LATESTbc50ca14e11a4dd7b04ce1d6564e0ba1:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/19/[$LATEST]bc50ca14e11a4dd7b04ce1d6564e0ba1"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250402LATEST3925bcc6dc9240e595256895b03ffb47:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/02/[$LATEST]3925bcc6dc9240e595256895b03ffb47"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  S3BucketCs596finalproject:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: false
+        IgnorePublicAcls: false
+        BlockPublicPolicy: false
+        BlockPublicAcls: false
+      BucketName: "cs596finalproject"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  LogsLogStream20250419LATEST281f8c166d7b4adc98245d876e876d48:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/19/[$LATEST]281f8c166d7b4adc98245d876e876d48"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogGroupawslambdaGenerateGraph:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      FieldIndexPolicies: []
+      LogGroupClass: "STANDARD"
+      RetentionInDays: 3
+      LogGroupName: "/aws/lambda/GenerateGraph"
+      DataProtectionPolicy: {}
+  LambdaFunctionReportTemperatureAndHumidity:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        S3ObjectVersion:
+          Ref: "LambdaFunctionReportTemperatureAndHumidityCodeS3ObjectVersionQIVqz"
+        S3Bucket:
+          Ref: "LambdaFunctionReportTemperatureAndHumidityCodeS3Bucketgsq8J"
+        ZipFile:
+          Ref: "LambdaFunctionReportTemperatureAndHumidityCodeZipFilezNb1X"
+        ImageUri:
+          Ref: "LambdaFunctionReportTemperatureAndHumidityCodeImageUriY32pT"
+        S3Key:
+          Ref: "LambdaFunctionReportTemperatureAndHumidityCodeS3Keyb7lzT"
+      Role:
+        Fn::GetAtt:
+        - "IAMRoleReportTemperatureAndHumidity"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "ReportTemperatureAndHumidity"
+      Runtime: "python3.13"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/ReportTemperatureAndHumidity"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Tags:
+      - Value: "arn:aws:resource-groups:us-west-2:198840074363:group/CS596FinalProject/0dgrw0b7br9kgrhnogfo6ma1ai"
+        Key: "awsApplication"
+      - Value: "CS596FinalProject"
+        Key: "AppAssoc"
+      Architectures:
+      - "arm64"
+  LogsLogStream20250418LATEST0d46beff0384426e8bcdfeb491fc2597:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]0d46beff0384426e8bcdfeb491fc2597"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250410LATEST990334967d9f4defa8b8412ee0336c42:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/10/[$LATEST]990334967d9f4defa8b8412ee0336c42"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250420LATEST9dc66aaa80da4662a94455bcd0da3b63:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/20/[$LATEST]9dc66aaa80da4662a94455bcd0da3b63"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250418LATESTa4c05408c1e642acba6bc55c253422e7:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]a4c05408c1e642acba6bc55c253422e7"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250421LATEST3fd798471d724314b730b760334ccde6:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/21/[$LATEST]3fd798471d724314b730b760334ccde6"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250424LATEST41d0ac0ccdab4052a5b1a10fbe546d10:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/24/[$LATEST]41d0ac0ccdab4052a5b1a10fbe546d10"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250420LATEST1981e43784164b58806d5495eaa4969d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/20/[$LATEST]1981e43784164b58806d5495eaa4969d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250418LATESTdc1c59e6d4134933ac3309caac9f223e:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]dc1c59e6d4134933ac3309caac9f223e"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250325LATEST42d602e34b61459f8f5d6fab77d50ccf:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/25/[$LATEST]42d602e34b61459f8f5d6fab77d50ccf"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250325LATEST0d0dbbd6ec274bf6bc4a2df996f63ad3:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/25/[$LATEST]0d0dbbd6ec274bf6bc4a2df996f63ad3"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250427LATESTca3db1d0a18547dc848adccb6788e690:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/27/[$LATEST]ca3db1d0a18547dc848adccb6788e690"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250329LATEST7c032a15d5fe4dbd8bf7ea2bb2e1cc10:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/29/[$LATEST]7c032a15d5fe4dbd8bf7ea2bb2e1cc10"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250418LATEST5a6ebbc941f44cef9385ba8eee44d750:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]5a6ebbc941f44cef9385ba8eee44d750"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250401LATEST935818e1ac99441b89d9d9e013bf8b38:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/01/[$LATEST]935818e1ac99441b89d9d9e013bf8b38"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250331LATEST08d82065b48148d1975899919eb4cf31:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/31/[$LATEST]08d82065b48148d1975899919eb4cf31"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogGroupawslambdaLatestReadout:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      FieldIndexPolicies: []
+      LogGroupClass: "STANDARD"
+      RetentionInDays: 3
+      LogGroupName: "/aws/lambda/LatestReadout"
+      DataProtectionPolicy: {}
+  LogsLogStream20250325LATEST4fe54f41457a4da4b21e0cb6c0cf4bf5:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/25/[$LATEST]4fe54f41457a4da4b21e0cb6c0cf4bf5"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250325LATESTc7a4a12f132043c99845093fd9a755a9:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/25/[$LATEST]c7a4a12f132043c99845093fd9a755a9"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250421LATESTd65ed9ed8c1c4eefb2307347a054217e:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/21/[$LATEST]d65ed9ed8c1c4eefb2307347a054217e"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  IAMRoleGenerateGraphh:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/service-role/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::198840074363:policy/service-role/AWSLambdaBasicExecutionRole-717fe1ac-e50d-4041-8375-d28fa2ae6851"
+      - "arn:aws:iam::198840074363:policy/service-role/AWSLambdaMicroserviceExecutionRole-225e89f9-ecd2-4f46-a21c-d766e8df9211"
+      MaxSessionDuration: 3600
+      RoleName: "GenerateGraphh"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  LogsLogStream20250418LATEST88e7548dba2e44f2b5c7c59f8d05154d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]88e7548dba2e44f2b5c7c59f8d05154d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250422LATEST39d96444805847d08c99332d005ffeed:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/22/[$LATEST]39d96444805847d08c99332d005ffeed"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250407LATESTa1fca5d0c6ac4ca9830b328b7f5c90e9:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/07/[$LATEST]a1fca5d0c6ac4ca9830b328b7f5c90e9"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250420LATEST0efb96aac9a0497898451c41d11d2ac0:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/20/[$LATEST]0efb96aac9a0497898451c41d11d2ac0"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250421LATEST5b7957a7284b45e7a595f44cb864aa96:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/21/[$LATEST]5b7957a7284b45e7a595f44cb864aa96"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogGroupawslambdaReportTemperatureAndHumidity:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      FieldIndexPolicies: []
+      LogGroupClass: "STANDARD"
+      RetentionInDays: 3
+      LogGroupName: "/aws/lambda/ReportTemperatureAndHumidity"
+      DataProtectionPolicy: {}
+  LogsLogStream20250327LATEST79dac1d4113f4824a454210747264e0d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/27/[$LATEST]79dac1d4113f4824a454210747264e0d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250417LATEST60255bd3796d47ac8d9bf524ccb850a7:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/17/[$LATEST]60255bd3796d47ac8d9bf524ccb850a7"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LambdaPermissionFunctionReportTemperatureAndHumidityCw:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionReportTemperatureAndHumidity"
+        - "Arn"
+      Action: "lambda:InvokeFunctionUrl"
+      FunctionUrlAuthType: "NONE"
+      Principal: "*"
+  LogsLogStream20250421LATEST4ac1f9144ae84474b37c2bbf40a2d9e6:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/21/[$LATEST]4ac1f9144ae84474b37c2bbf40a2d9e6"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  ResourceGroupsGroupAWSAppRegistryApplicationCS596FinalProject:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ResourceGroups::Group"
+    DeletionPolicy: "Retain"
+    Properties:
+      Configuration:
+      - Type: "AWS::AppRegistry::Application"
+        Parameters:
+        - Values:
+          - "arn:aws:servicecatalog:us-west-2:198840074363:/applications/0dgrw0b7br9kgrhnogfo6ma1ai"
+          Name: "arn"
+        - Values:
+          - "CS596FinalProject"
+          Name: "name"
+      Tags:
+      - Value: "true"
+        Key: "EnableAWSServiceCatalogAppRegistry"
+      Name: "AWS_AppRegistry_Application-CS596FinalProject"
+  LogsLogStream20250419LATEST41bd664f20ac45a6934fc7495554b311:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/19/[$LATEST]41bd664f20ac45a6934fc7495554b311"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250403LATESTd5b21e27fa78405da71ab520c8147dd3:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/03/[$LATEST]d5b21e27fa78405da71ab520c8147dd3"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250418LATESTf1a6da74dd5b4fe7b55a094a10cf88be:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]f1a6da74dd5b4fe7b55a094a10cf88be"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250421LATEST85b86d600a354e108a7b9f51fb5d57a1:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/21/[$LATEST]85b86d600a354e108a7b9f51fb5d57a1"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LambdaFunctionLatestReadout:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 5
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        S3ObjectVersion:
+          Ref: "LambdaFunctionLatestReadoutCodeS3ObjectVersionaPmkf"
+        S3Bucket:
+          Ref: "LambdaFunctionLatestReadoutCodeS3BucketsIRnF"
+        ZipFile:
+          Ref: "LambdaFunctionLatestReadoutCodeZipFile8WyGh"
+        ImageUri:
+          Ref: "LambdaFunctionLatestReadoutCodeImageUri78MxI"
+        S3Key:
+          Ref: "LambdaFunctionLatestReadoutCodeS3KeygLaJn"
+      Role:
+        Fn::GetAtt:
+        - "IAMRoleLatestReadout"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "LatestReadout"
+      Runtime: "python3.13"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/LatestReadout"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "arm64"
+  ApiGatewayRestApi:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::RestApi"
+    DeletionPolicy: "Retain"
+    Properties:
+      ApiKeySourceType: "HEADER"
+      EndpointConfiguration:
+        IpAddressType: "ipv4"
+        Types:
+        - "REGIONAL"
+      DisableExecuteApiEndpoint: false
+      Tags:
+      - Value: "CS596FinalProject"
+        Key: "AppAssoc"
+      - Value: "arn:aws:resource-groups:us-west-2:198840074363:group/CS596FinalProject/0dgrw0b7br9kgrhnogfo6ma1ai"
+        Key: "awsApplication"
+      Name: "WeatherAPI"
+  LogsLogStream20250425LATEST1d864a55019543a4bc348865d228abcb:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/25/[$LATEST]1d864a55019543a4bc348865d228abcb"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250325LATESTa4591c5cb42f4df889ab55a02bea3007:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/25/[$LATEST]a4591c5cb42f4df889ab55a02bea3007"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250422LATESTd2e7553a988843d0ada67efdddb3d634:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/22/[$LATEST]d2e7553a988843d0ada67efdddb3d634"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250418LATESTf1e13ff405db405a8246595a65827f0f:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]f1e13ff405db405a8246595a65827f0f"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250404LATEST43f1d194436a4cc1abb7c1f26f8cca5c:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/04/[$LATEST]43f1d194436a4cc1abb7c1f26f8cca5c"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250423LATEST1e7ca12e3eec40d380a04857f8570dbb:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/23/[$LATEST]1e7ca12e3eec40d380a04857f8570dbb"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250421LATEST65998e5f48f2485e87eb912e461c8cf6:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/21/[$LATEST]65998e5f48f2485e87eb912e461c8cf6"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250419LATESTdf40dce6c4ce48deaa846a2b9faa7a44:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/19/[$LATEST]df40dce6c4ce48deaa846a2b9faa7a44"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  IAMRoleDynamoDBwriteread:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/service-role/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::198840074363:policy/service-role/AWSLambdaBasicExecutionRole-f758f32f-3b4b-4dbf-ae16-0e1915720631"
+      - "arn:aws:iam::198840074363:policy/service-role/AWSLambdaMicroserviceExecutionRole-ff04bbe1-ed1e-4d25-9eff-29ab9351b201"
+      MaxSessionDuration: 3600
+      RoleName: "DynamoDB_write_read"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  LambdaFunctionGenerateGraph:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 10
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        S3ObjectVersion:
+          Ref: "LambdaFunctionGenerateGraphCodeS3ObjectVersionsXFQf"
+        S3Bucket:
+          Ref: "LambdaFunctionGenerateGraphCodeS3BucketYV4KX"
+        ZipFile:
+          Ref: "LambdaFunctionGenerateGraphCodeZipFilemwk9L"
+        ImageUri:
+          Ref: "LambdaFunctionGenerateGraphCodeImageUriCQApK"
+        S3Key:
+          Ref: "LambdaFunctionGenerateGraphCodeS3Key4IGsR"
+      Role:
+        Fn::GetAtt:
+        - "IAMRoleGenerateGraphh"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "GenerateGraph"
+      Runtime: "python3.13"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/GenerateGraph"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Layers:
+      - "arn:aws:lambda:us-west-2:198840074363:layer:Plotly:2"
+      Architectures:
+      - "arm64"
+  LogsLogStream20250408LATEST8bb72c0ce7e24952bd65bd75277338b8:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/08/[$LATEST]8bb72c0ce7e24952bd65bd75277338b8"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250420LATEST742358eb8891455a83d921a259547c93:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/20/[$LATEST]742358eb8891455a83d921a259547c93"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250410LATEST1ab1e07b90d74fbba61b55b6a33caa42:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/10/[$LATEST]1ab1e07b90d74fbba61b55b6a33caa42"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250419LATESTd85d475ec7f049ea9330d35db77a4e34:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/19/[$LATEST]d85d475ec7f049ea9330d35db77a4e34"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LambdaFunctionGatherForecast:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        S3ObjectVersion:
+          Ref: "LambdaFunctionGatherForecastCodeS3ObjectVersionNzKwG"
+        S3Bucket:
+          Ref: "LambdaFunctionGatherForecastCodeS3BucketsLToJ"
+        ZipFile:
+          Ref: "LambdaFunctionGatherForecastCodeZipFileOfGLk"
+        ImageUri:
+          Ref: "LambdaFunctionGatherForecastCodeImageUriVp9Q8"
+        S3Key:
+          Ref: "LambdaFunctionGatherForecastCodeS3Key00hs5"
+      Role:
+        Fn::GetAtt:
+        - "IAMRoleDynamoDBwriteread"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "GatherForecast"
+      Runtime: "python3.13"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/GatherForecast"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Tags:
+      - Value: "arn:aws:resource-groups:us-west-2:198840074363:group/CS596FinalProject/0dgrw0b7br9kgrhnogfo6ma1ai"
+        Key: "awsApplication"
+      - Value: "CS596FinalProject"
+        Key: "AppAssoc"
+      Architectures:
+      - "arm64"
+  LogsLogStream20250426LATESTcb89a452945c4fc78ce9009d675b272b:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/26/[$LATEST]cb89a452945c4fc78ce9009d675b272b"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LambdaPermissionFunctionReportTemperatureAndHumidity:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionReportTemperatureAndHumidity"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-west-2:198840074363:9hkxj32ovi/*/POST/data"
+      Principal: "apigateway.amazonaws.com"
+  LogsLogStream20250414LATEST70face1f6e3e49fda736aa2408cd17b5:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/14/[$LATEST]70face1f6e3e49fda736aa2408cd17b5"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250423LATEST01887629b7124aaea38120a60dcba52c:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/23/[$LATEST]01887629b7124aaea38120a60dcba52c"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  ApiGatewayDeployment:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi"
+      Description: "public"
+  LogsLogStream20250419LATEST23542b2bab3441b1929b4656d385fa56:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/19/[$LATEST]23542b2bab3441b1929b4656d385fa56"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250421LATEST5f20be118b3b444baec4e5ab646b5a55:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/21/[$LATEST]5f20be118b3b444baec4e5ab646b5a55"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250421LATESTdd1b697828e34dc3abb78f57f5b0b1e4:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/21/[$LATEST]dd1b697828e34dc3abb78f57f5b0b1e4"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  IAMRoleLatestReadout:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/service-role/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::198840074363:policy/service-role/AWSLambdaBasicExecutionRole-91cb4cea-2e27-4e12-af50-4a20eb2ccfe7"
+      - "arn:aws:iam::198840074363:policy/service-role/AWSLambdaMicroserviceExecutionRole-89b8d5ec-c68e-43f0-b2ff-f93520eb6600"
+      MaxSessionDuration: 3600
+      RoleName: "LatestReadout"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  LogsLogStream20250406LATEST39535a97bb7040b3af4db50ac12cf4f2:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/06/[$LATEST]39535a97bb7040b3af4db50ac12cf4f2"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250418LATESTa21a8b00cfd14801bd6c04a58e300279:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]a21a8b00cfd14801bd6c04a58e300279"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250428LATESTd0e84cfc7e6c4edfa71b3ec759b00601:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/28/[$LATEST]d0e84cfc7e6c4edfa71b3ec759b00601"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  CloudFrontDistribution:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudFront::Distribution"
+    DeletionPolicy: "Retain"
+    Properties:
+      DistributionConfig:
+        Logging:
+          IncludeCookies: false
+          Bucket: ""
+          Prefix: ""
+        Comment: ""
+        DefaultRootObject: "index.html"
+        Origins:
+        - ConnectionTimeout: 10
+          OriginAccessControlId: ""
+          ConnectionAttempts: 3
+          OriginCustomHeaders: []
+          DomainName: "9hkxj32ovi.execute-api.us-west-2.amazonaws.com"
+          OriginShield:
+            Enabled: false
+          OriginPath: ""
+          Id: "9hkxj32ovi.execute-api.us-west-2.amazonaws.com"
+          CustomOriginConfig:
+            OriginKeepaliveTimeout: 5
+            OriginReadTimeout: 30
+            OriginSSLProtocols:
+            - "TLSv1.2"
+            HTTPSPort: 443
+            HTTPPort: 80
+            OriginProtocolPolicy: "https-only"
+        - ConnectionTimeout: 10
+          OriginAccessControlId: "E2M6V6M8XOFBAX"
+          ConnectionAttempts: 3
+          OriginCustomHeaders: []
+          DomainName:
+            Fn::GetAtt:
+            - "S3BucketCs596finalproject"
+            - "RegionalDomainName"
+          OriginShield:
+            Enabled: false
+          S3OriginConfig:
+            OriginAccessIdentity: ""
+          OriginPath: ""
+          Id: "cs596finalproject.s3.us-west-2.amazonaws.com"
+        ViewerCertificate:
+          MinimumProtocolVersion: "TLSv1"
+          SslSupportMethod: "vip"
+          CloudFrontDefaultCertificate: true
+        PriceClass: "PriceClass_100"
+        DefaultCacheBehavior:
+          Compress: true
+          FunctionAssociations: []
+          LambdaFunctionAssociations: []
+          TargetOriginId: "cs596finalproject.s3.us-west-2.amazonaws.com"
+          ViewerProtocolPolicy: "allow-all"
+          GrpcConfig:
+            Enabled: false
+          TrustedSigners: []
+          FieldLevelEncryptionId: ""
+          TrustedKeyGroups: []
+          AllowedMethods:
+          - "HEAD"
+          - "GET"
+          CachedMethods:
+          - "HEAD"
+          - "GET"
+          SmoothStreaming: false
+          CachePolicyId: "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        Staging: false
+        CustomErrorResponses: []
+        ContinuousDeploymentPolicyId: ""
+        OriginGroups:
+          Quantity: 0
+          Items: []
+        Enabled: true
+        Aliases: []
+        IPV6Enabled: true
+        WebACLId: ""
+        HttpVersion: "http2"
+        Restrictions:
+          GeoRestriction:
+            Locations: []
+            RestrictionType: "none"
+        CacheBehaviors:
+        - Compress: true
+          FunctionAssociations: []
+          LambdaFunctionAssociations: []
+          TargetOriginId: "9hkxj32ovi.execute-api.us-west-2.amazonaws.com"
+          ViewerProtocolPolicy: "allow-all"
+          ResponseHeadersPolicyId: "5cc3b908-e619-4b99-88e5-2cf7f45965bd"
+          GrpcConfig:
+            Enabled: false
+          TrustedSigners: []
+          FieldLevelEncryptionId: ""
+          TrustedKeyGroups: []
+          AllowedMethods:
+          - "HEAD"
+          - "DELETE"
+          - "POST"
+          - "GET"
+          - "OPTIONS"
+          - "PUT"
+          - "PATCH"
+          PathPattern: "/api/*"
+          CachedMethods:
+          - "HEAD"
+          - "GET"
+          SmoothStreaming: false
+          OriginRequestPolicyId: "b689b0a8-53d0-40ab-baf2-68738e2966ac"
+          CachePolicyId: "856e337b-de43-4323-a9fc-27b310ce14f9"
+  LogsLogStream20250326LATEST9391b8d87ff448cfac5a2509bec8df32:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/26/[$LATEST]9391b8d87ff448cfac5a2509bec8df32"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250409LATESTe6e6c906805f4b08b14d86240464ff18:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/09/[$LATEST]e6e6c906805f4b08b14d86240464ff18"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250325LATESTaaefb8156b02443b97c461af6c27342d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/25/[$LATEST]aaefb8156b02443b97c461af6c27342d"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250418LATEST15d65e6851454097ac90d1689412e378:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]15d65e6851454097ac90d1689412e378"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250411LATESTab6198e200a34d48ba86ffc6546d6d54:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/11/[$LATEST]ab6198e200a34d48ba86ffc6546d6d54"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250416LATEST795b6eefcd5e41878e414cf52e276e33:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/16/[$LATEST]795b6eefcd5e41878e414cf52e276e33"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  ApiGatewayStage:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Stage"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi"
+      DeploymentId:
+        Fn::GetAtt:
+        - "ApiGatewayDeployment"
+        - "DeploymentId"
+      MethodSettings:
+      - CacheTtlInSeconds: 300
+        ResourcePath: "/*"
+        CacheDataEncrypted: false
+        DataTraceEnabled: false
+        ThrottlingBurstLimit: 5000
+        CachingEnabled: false
+        MetricsEnabled: false
+        HttpMethod: "*"
+        ThrottlingRateLimit: 10000
+      StageName: "api"
+      TracingEnabled: false
+      CacheClusterEnabled: false
+  LogsLogStream20250422LATEST547234a523a04580a35a751b56622312:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/22/[$LATEST]547234a523a04580a35a751b56622312"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250421LATEST6a5e2557f7e1476f9bb02ef8ceed564c:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/21/[$LATEST]6a5e2557f7e1476f9bb02ef8ceed564c"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  S3BucketPolicyCs596finalproject:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::BucketPolicy"
+    DeletionPolicy: "Retain"
+    Properties:
+      Bucket:
+        Ref: "S3BucketCs596finalproject"
+      PolicyDocument:
+        Version: "2008-10-17"
+        Statement:
+        - Condition:
+            StringEquals:
+              AWS:SourceArn: "arn:aws:cloudfront::198840074363:distribution/E2BUKNPY4XKDLS"
+          Resource: "arn:aws:s3:::cs596finalproject/*"
+          Action: "s3:GetObject"
+          Effect: "Allow"
+          Principal:
+            Service: "cloudfront.amazonaws.com"
+          Sid: "AllowCloudFrontServicePrincipal"
+        Id: "PolicyForCloudFrontPrivateContent"
+  LogsLogStream20250325LATESTeff6267094d74c679bfb1bd7602cacbc:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/03/25/[$LATEST]eff6267094d74c679bfb1bd7602cacbc"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
+  LogsLogStream20250422LATESTa20156499bb6495e9a82c46763a4995b:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/22/[$LATEST]a20156499bb6495e9a82c46763a4995b"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250418LATEST2c355332add444138ca966af015a1356:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]2c355332add444138ca966af015a1356"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250418LATEST7f4b2981f0044ca9bc53b2c19414fd55:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/04/18/[$LATEST]7f4b2981f0044ca9bc53b2c19414fd55"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGenerateGraph"
+  LogsLogStream20250501LATESTbee9ed8e925a499786fcd253840080ba:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Logs::LogStream"
+    DeletionPolicy: "Retain"
+    Properties:
+      LogStreamName: "2025/05/01/[$LATEST]bee9ed8e925a499786fcd253840080ba"
+      LogGroupName:
+        Ref: "LogsLogGroupawslambdaGatherForecast"
